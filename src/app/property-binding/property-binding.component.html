@@ -1,0 +1,15 @@
+<p>
+  Property binding is denoted by [] where we specify
+  one-way-bindings to DOM properties and template expressions
+
+  [propert] = "expression"
+</p>
+
+This is how you'd send notes to a child component:
+<!--
+<app-notes [notes]="notes"></app-notes>
+-->
+
+<div [ngStyle]="styleObject" (click)="changeBackgroundColor()">
+<h2>Click me to change the color</h2>
+</div>
